@@ -4,6 +4,7 @@ import sync
 import requests
 
 import os
+import sys
 import json
 
 from config import *
@@ -44,7 +45,7 @@ def mined():
         return jsonify(confirmed=True)
     else:
         #ditch it
-        return jsonfiy(confirmed=False)
+        return jsonify(confirmed=False)
 
 if __name__ == '__main__':
 
